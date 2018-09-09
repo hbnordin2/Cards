@@ -1,5 +1,4 @@
-from Dynamo.dynamo import DynamoTable
-
+from helloworld.Dynamo.dynamo import DynamoTable
 
 class CardTable(DynamoTable):
     def __init__(self):

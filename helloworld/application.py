@@ -2,8 +2,7 @@
 import json
 from flask import Flask, Response
 
-from CardTable.cardtable import CardTable
-from Dynamo.dynamo import DynamoTable
+from helloworld.CardTable.cardtable import CardTable
 from helloworld.flaskrun import flaskrun
 
 application = Flask(__name__)

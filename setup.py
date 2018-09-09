@@ -6,7 +6,7 @@ setup(
     include_package_data=True,
     install_requires=[
         'flask',
-	'boto3',
+	    'boto3',
     ],
     setup_requires=[
         'pytest-runner',
