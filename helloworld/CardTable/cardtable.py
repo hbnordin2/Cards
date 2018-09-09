@@ -6,3 +6,9 @@ class CardTable(DynamoTable):
 
     def getCard(self, topic):
         return self.table.getItems()
+
+    def insertCard(self, frontText, backText, topic):
+        self.table.insertItem({"cardId":hash(frontText + backText + topic), "frontText":frontText, "backText":backText})
+
+    def helloWorld(self):
+        print("Hello world")
