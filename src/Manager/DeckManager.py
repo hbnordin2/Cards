@@ -1,6 +1,6 @@
-from helloworld.Model.Deck import Deck
-from helloworld.Model.Card import Card
-from helloworld.CardTable.CardTable import CardTable
+from src.Model.Deck import Deck
+from src.Model.Card import Card
+from src.CardTable.CardTable import CardTable
 
 class DeckManager:
     def __init__(self, topic):

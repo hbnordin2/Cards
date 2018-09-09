@@ -2,10 +2,10 @@
 import json
 from flask import Flask, Response, request
 
-from helloworld.Manager.DeckManager import DeckManager
-from helloworld.Model.Card import Card
-from helloworld.CardTable.CardTable import CardTable
-from helloworld.flaskrun import flaskrun
+from src.Manager.DeckManager import DeckManager
+from src.Model.Card import Card
+from src.CardTable.CardTable import CardTable
+from src.flaskrun import flaskrun
 
 application = Flask(__name__)
 

@@ -1,7 +1,7 @@
 import random
 import time
 
-from helloworld.Model.Constants import NEEDED_CARD_FIELDS
+from src.Model.Constants import NEEDED_CARD_FIELDS
 
 
 class Card:

@@ -4,7 +4,7 @@ build
 .venv
 .eggs
 dist
-helloworld.egg-info
+src.egg-info
 *__pycache__*
 *.pyc
 venv
