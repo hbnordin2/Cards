@@ -4,11 +4,12 @@ class CardTable(DynamoTable):
     def __init__(self):
         self.table = DynamoTable("Cards")
 
-    def getCard(self, topic):
+    def getEverything(self):
         return self.table.getItems()
 
-    def insertCard(self, frontText, backText, topic):
-        self.table.insertItem({"cardId":hash(frontText + backText + topic), "frontText":frontText, "backText":backText})
+    def insertCard(self, card):
+        self.table.insertItem(card.dictionary)
+        return card
 
     def helloWorld(self):
         print("Hello world")
